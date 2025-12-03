@@ -1,0 +1,69 @@
+.hero {
+  display: flex;
+  gap: 16px;
+  text-align: left;
+}
+.hero__start-screen {
+  padding: 84px 60px 16px;
+  background-color: #1A1A1A;
+  border-radius: 16px;
+}
+.hero__title {
+  font-size: 54px;
+  margin-bottom: 4px;
+  color: #F9EFEC;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.hero__header {
+  display: flex;
+  gap: 20px;
+  align-items: first baseline ;
+}
+.hero__start-project {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero__start-project-title {
+  font-size: 20px;
+  color: #CE7D63;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.hero__description {
+  font-size: 16px;
+  margin-bottom: 84px;
+  color: #676665;
+  margin-top: 24px;
+  max-width: 650px;
+}
+.hero__description-image {
+  width: 100%;
+}
+.hero__project-card {
+  background-color: #1F1F1F;
+  border-radius: 12px;
+}
+.hero__project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+.hero__project-info {
+  padding: 16px 24px;
+}
+.hero__project-title {
+  color: #F9EFEC;
+  font-size: 20px;
+}
+.hero__project-subtitle {
+  color: #B3B3B2;
+  font-size: 16px;
+  margin-top: 2px;
+}
+@media (max-width: 1200px) {
+  .hero__project-card {
+    display: none;
+  }
+}

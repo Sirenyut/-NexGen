@@ -1,0 +1,55 @@
+@import "variables.less";
+.page {
+    max-width: 95%;
+    margin: 0 auto;
+}
+html {
+    background-color: @dark-06;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 38px;
+}
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 14px;
+        background-color: @dark-10;
+
+        &__logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: @gray-40;
+            padding: 35px 40px;
+        }
+
+        &__nav {
+            display: flex;
+            gap: 16px;
+            list-style: none;
+            padding: 20px;
+
+            &-item {
+                font-size: 14px;
+                padding: 14px 20px;
+                color: @gray-50;
+                background-color: @dark-06;
+                border-radius: 12px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+
+            &-link {
+                text-decoration: none;
+                color: @gray-50;
+                transition: color 0.3s;
+            }
+        }
+    }

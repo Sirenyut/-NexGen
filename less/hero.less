@@ -1,0 +1,77 @@
+@import "variables.less";
+.hero {
+    
+    display: flex;
+    gap: 16px;
+    text-align: left;
+
+        &__start-screen {
+            padding: 84px 60px 16px;
+            
+            background-color: @dark-10;
+            border-radius: @br-16;
+        }
+
+        &__title {
+            font-size: 54px;
+            margin-bottom: 4px;
+            color: @orange-95;
+            text-transform: uppercase;
+            font-weight: @fw-semibold;
+        }
+        &__header{
+            display: flex;
+            gap: 20px;
+            align-items:first baseline ;
+        }
+        &__start-project{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        &__start-project-title{
+            font-size: @fs-20;
+            color: @orange-60;
+            text-transform: uppercase;
+            font-weight: @fw-medium;
+        }
+     
+        &__description {
+            font-size: @fs-16;
+            margin-bottom: 84px;
+            color: @gray-40;
+            margin-top: 24px;
+            max-width: 650px;
+        }
+        &__description-image{
+            width: 100%;
+        }
+        &__project-card{
+            background-color: @dark-12;
+            border-radius: @br-12;
+            
+        }
+        &__project-image{
+            max-width: 100%; 
+            height: auto;
+            border-radius: @br-12 @br-12 0 0;
+        }
+        &__project-info{
+            padding: 16px 24px;
+        }
+        &__project-title{
+            color: @orange-95;
+            font-size: @fs-20;
+        }
+        &__project-subtitle{
+            color: @gray-70;
+            font-size: @fs-16;
+            margin-top: 2px;
+        }
+    }
+
+@media (max-width: 1200px) {
+    .hero__project-card{
+            display: none;
+        }
+ }

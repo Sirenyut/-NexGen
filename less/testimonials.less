@@ -1,0 +1,104 @@
+@import "variables.less";
+
+.testimonials{
+    width: 100%;
+    padding: 8px;
+    padding-bottom: 0;
+    border-radius: 20px;
+    border: 2px solid @dark-10;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+
+        &__header {
+            grid-column: 1/5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: @br-14;
+            background-color: @dark-10;
+            padding: 32px 40px 40px;
+        }
+
+        &__title {
+            color: @orange-95;
+            font-size: @fs-38;
+            text-transform: uppercase;
+            font-weight: @fw-semibold;
+        }
+
+        &__header-link {
+            color: @gray-70;
+            font-size: @fs-16;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: @dark-10;
+            border-radius: @br-12;
+        }
+
+        &__item-title {
+            padding-top: 30px;
+            padding-left: 30px;
+            color: @orange-95;
+            font-size: @fs-22;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: @fw-medium;
+
+        }
+
+        &__item-description {
+            
+            padding-left: 30px;
+            color: @gray-70;
+            font-size: @fs-16;
+            margin-bottom: 30px;
+        }
+
+        &__item-link {
+            color: @gray-70;
+            font-size: @fs-16;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        &__staff-item{
+            background-color: @dark-12;
+            padding: 20px 30px;
+            display: flex;
+            
+        }
+        &__staff{
+            width: 100%;
+            margin-left: 10px;
+        }
+        &__staff-name{
+            font-size: @fs-18;
+            color: @orange-90;
+        }
+        &__staff-post{
+            font-size: @fs-16;
+            color: @gray-50;
+        }
+
+}
+
+@media (max-width: 380px) {
+    .testimonials {
+        border-radius: @br-16;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+          &__title {
+            grid-column: 1;
+            
+        }
+    }
+}

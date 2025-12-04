@@ -376,7 +376,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 80px;
-  padding: 30px 40px;
+  padding: 30px min(40px, max(20px, 4vw));
 }
 .main-screen {
   display: grid;
@@ -436,7 +436,7 @@ h2 {
 .header__nav-link:hover {
   color: #0F0F0F;
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .header {
     flex-wrap: wrap;
     padding: 20px;
